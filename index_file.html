@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+</head>
+
+<body>
+    <style>
+        form{
+            
+            width: fill;
+            padding: 50px;
+            border-radius: 10px;
+            
+            background-color: aqua;
+        }
+        input{
+            width: 100%;
+            height: 30px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 12px;
+            border-radius: 4px;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 3, 3);
+            margin-bottom: 10px;
+        }
+        input[type="submit"]
+        {
+            background-color: rgb(47, 157, 247);
+            color: #fff;
+        }
+
+    </style>
+
+    <!-- <a href="https://www.w3schools.com/html/html_layout.asp">w3schools.com</a> -->
+    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="get">
+        <label >
+            Name :
+            <input type="text" name="User_First_Name" placeholder="erfan.....">
+        </label>
+        <label >
+            Age :
+            <input type="text" name="User_Age" placeholder="19.......">
+        </label>
+        <input type="submit" value="submit ">
+    </form>
+    <h1>hello world </h1>    
+</body>
+</html>
